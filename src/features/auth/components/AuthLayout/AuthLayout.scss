@@ -1,0 +1,27 @@
+.features-auth {
+	&__Auth-layout {
+		&__top-bar {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			align-items: center;
+			justify-content: center;
+			filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.06)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
+			padding: 16px;
+			background-color: #fff;
+			z-index: 4024;
+		}
+		&__wrapper {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			min-height: 100vh;
+			width: 100%;
+		}
+		&__inside {
+			max-width: 100%;
+			width: 300px;
+		}
+	}
+}

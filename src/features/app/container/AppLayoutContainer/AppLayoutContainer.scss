@@ -1,0 +1,49 @@
+.features-app {
+	&__App-layout {
+		&__top-bar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.06)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
+			z-index: 100;
+			&.ant-layout-header {
+				background-color: #fff;
+				padding: 1rem;
+			}
+		}
+		&__wrapper {
+			height: 100vh;
+			overflow: hidden;
+		}
+		&__content {
+			max-height: 100vh;
+			overflow-y: scroll;
+			padding: 2.286em;
+			&::-webkit-scrollbar {
+				width: 8px;
+				height: 8px;
+				background-color: #e5e7eb; /* or add it to the track */
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #418b6e;
+				cursor: pointer;
+				border-radius: 999px;
+			}
+		}
+		&__content-mobile {
+			max-height: 100vh;
+			overflow-y: scroll;
+			padding: 1em;
+			&::-webkit-scrollbar {
+				width: 8px;
+				height: 8px;
+				background-color: #e5e7eb; /* or add it to the track */
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #418b6e;
+				cursor: pointer;
+				border-radius: 999px;
+			}
+		}
+	}
+}

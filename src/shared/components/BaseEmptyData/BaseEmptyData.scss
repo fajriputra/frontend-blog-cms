@@ -1,0 +1,40 @@
+.shared-component {
+	&.BaseEmptyData {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&__type {
+			&--table {
+				min-height: 412px;
+			}
+			&--select {
+				padding: 16px;
+			}
+		}
+		.BaseEmptyData {
+			&__svg {
+				width: 100%;
+				max-width: 256px;
+
+				margin-bottom: 16px;
+				&--table {
+					width: 128px;
+				}
+				&--select {
+					margin-top: -32px;
+					margin-bottom: -32px;
+					width: 72px;
+				}
+			}
+			&__heading {
+				margin-bottom: 4px;
+			}
+			&__sub-heading {
+				max-width: 300px;
+				text-align: center;
+			}
+		}
+	}
+}

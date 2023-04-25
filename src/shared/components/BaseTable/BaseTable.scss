@@ -1,0 +1,73 @@
+.shared-component {
+	&.BaseTable {
+		table {
+			thead {
+				tr {
+					border-right: none;
+					th {
+						background: transparent;
+						border-radius: none;
+						&::before {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		.BaseTable {
+			&__wrapper {
+				display: block;
+			}
+			&__outer-card {
+				box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+				border-radius: 8px;
+				width: 100%;
+				&--mobile {
+					background-color: transparent;
+					box-shadow: none;
+				}
+				.ant-card-body {
+					border-radius: 8px;
+					padding: 0px;
+				}
+			}
+			&__header-wrap {
+				padding: 16px 16px 0 16px;
+				&--mobile {
+					padding: 0px;
+				}
+			}
+			&__mobile-card {
+				border-radius: 8px;
+				.ant-card-body {
+					border-radius: 8px;
+					padding: 12px;
+				}
+			}
+			&__pagination-wrap {
+				padding: 16px;
+				.ant-pagination-prev {
+					margin: 0;
+					.ant-pagination-item-link {
+						border-top-right-radius: 0px;
+						border-bottom-right-radius: 0px;
+					}
+				}
+				.ant-pagination-item {
+					margin: 0px;
+					border-radius: 0px;
+				}
+				.ant-pagination-next {
+					margin: 0;
+					.ant-pagination-item-link {
+						border-top-left-radius: 0px;
+						border-bottom-left-radius: 0px;
+					}
+				}
+				.ant-pagination-item-link {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

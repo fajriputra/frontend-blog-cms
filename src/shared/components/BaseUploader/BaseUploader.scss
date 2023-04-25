@@ -1,0 +1,17 @@
+.shared-component {
+	&.uploader {
+		.img-container {
+			display: block;
+			width: unset;
+			max-width: 70%;
+			max-height: 300px;
+			margin: 0 auto;
+		}
+		.video-container {
+			object-fit: cover;
+			display: block;
+			margin: 0 auto;
+			max-width: 480px;
+		}
+	}
+}
